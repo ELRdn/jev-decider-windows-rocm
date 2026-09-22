@@ -1,0 +1,4 @@
+# Keep your working ROCm torch / Triton / Decider environment.
+# This file deliberately does not replace those packages.
+fastapi>=0.115,<1
+uvicorn>=0.30,<1

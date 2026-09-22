@@ -1,0 +1,13 @@
+Jev / Decider Windows ROCm integration
+Copyright 2026 ELRdn
+
+The weight-only conversion approach is inspired by Mapika/decider:
+https://github.com/Mapika/decider
+Copyright 2026 Mark Marosi, Apache License 2.0.
+This integration adds INT8 storage with BF16 computation, serialized API work,
+RAM offload, Windows process recycling, lifecycle scripts and validation.
+
+Model weights and dependency source code are not distributed here.
+Decider: Apache-2.0. Jev Gateway: MIT (vinilana/jev-gateway).
+Dependencies and model weights remain subject to their own licenses.
+This is an independent integration, not an official TypeSafe/Jev or AMD product.

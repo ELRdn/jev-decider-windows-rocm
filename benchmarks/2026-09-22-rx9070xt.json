@@ -1,0 +1,338 @@
+{
+  "measured_on": "2026-09-22",
+  "platform": "Windows",
+  "gpu": "AMD Radeon RX 9070 XT",
+  "vram_gib": 15.92,
+  "versions": {
+    "python": "3.12",
+    "decider_package": "0.9.0",
+    "decider_model": "decider-v10",
+    "decider_source_commit": "c4daaac28af9fea95d627015cffa2dd5a5926ee6",
+    "jev_gateway": "0.4.1",
+    "torch": "2.13.0+rocm10.0.0",
+    "hip": "7.15.26333",
+    "transformers": "5.17.0",
+    "triton_windows": "3.7.1.post27",
+    "flash_linear_attention": "0.5.2"
+  },
+  "memory_mib": {
+    "old_jev_wddm_resident": 6331,
+    "new_jev_wddm_resident_samples": [
+      3187.2,
+      3790.2
+    ],
+    "new_jev_wddm_after_cpu_offload": 2603.7,
+    "new_jev_wddm_after_process_recycle": 0,
+    "old_adapter_total": 14222,
+    "new_adapter_total_idle": 7891.9,
+    "old_torch_allocated": 3665.32,
+    "new_torch_allocated": 2370.4,
+    "ram_idle_working_set": 3089.4,
+    "ram_idle_private": 4125.5
+  },
+  "timing_ms": {
+    "warm_52_tokens_median_10_runs": 74.82,
+    "warm_two_questions_1866_tokens": 451.91,
+    "warm_two_questions_3434_tokens": 954.06,
+    "ram_resume_plus_short_request": 495.94,
+    "cold_first_gpu_request": 25781.08,
+    "process_recycle_after_last_request": 39500
+  },
+  "comparison": {
+    "cases": 22,
+    "questions": 37,
+    "all_choice_labels_matched": true,
+    "all_checked_confidence_bins_matched": true,
+    "max_choice_probability_delta": 0.0459,
+    "max_noul_delta": 0.0346,
+    "details": [
+      {
+        "case": "support-en-billing",
+        "question": "department",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0002999999999999999
+      },
+      {
+        "case": "support-en-tech",
+        "question": "department",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.00039999999999995595
+      },
+      {
+        "case": "support-en-sales",
+        "question": "department",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0009000000000000119
+      },
+      {
+        "case": "support-ja-billing",
+        "question": "department",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.00010000000000010001
+      },
+      {
+        "case": "support-ja-tech",
+        "question": "department",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.00040000000000006697
+      },
+      {
+        "case": "support-ja-sales",
+        "question": "department",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.00019999999999997797
+      },
+      {
+        "case": "read-en",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0005999999999999339
+      },
+      {
+        "case": "read-en",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.011400000000000021
+      },
+      {
+        "case": "read-ja",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0002000000000000001
+      },
+      {
+        "case": "read-ja",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.01050000000000001
+      },
+      {
+        "case": "write-en",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.007699999999999929
+      },
+      {
+        "case": "write-en",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.015800000000000036
+      },
+      {
+        "case": "write-ja",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.002799999999999997
+      },
+      {
+        "case": "write-ja",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.034599999999999964
+      },
+      {
+        "case": "test-en",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0023999999999999577
+      },
+      {
+        "case": "test-en",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.010699999999999987
+      },
+      {
+        "case": "test-ja",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.009400000000000075
+      },
+      {
+        "case": "test-ja",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.0
+      },
+      {
+        "case": "web-en",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.027100000000000013
+      },
+      {
+        "case": "web-en",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.008200000000000013
+      },
+      {
+        "case": "web-ja",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.014100000000000001
+      },
+      {
+        "case": "web-ja",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.005199999999999996
+      },
+      {
+        "case": "math-en",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0009000000000000119
+      },
+      {
+        "case": "math-en",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.000700000000000001
+      },
+      {
+        "case": "math-ja",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0034000000000000002
+      },
+      {
+        "case": "math-ja",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.005200000000000003
+      },
+      {
+        "case": "explain-en",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.010500000000000065
+      },
+      {
+        "case": "explain-en",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.0
+      },
+      {
+        "case": "explain-ja",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.015199999999999991
+      },
+      {
+        "case": "explain-ja",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.0040000000000000036
+      },
+      {
+        "case": "already-read",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.003699999999999995
+      },
+      {
+        "case": "already-read",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.0
+      },
+      {
+        "case": "ambiguous",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0026000000000000016
+      },
+      {
+        "case": "ambiguous",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.0
+      },
+      {
+        "case": "long-billing",
+        "question": "department",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.0014999999999999458
+      },
+      {
+        "case": "long-read",
+        "question": "tool",
+        "same_choice": true,
+        "same_confidence_gate": true,
+        "max_probability_delta": 0.045899999999999996
+      },
+      {
+        "case": "long-read",
+        "question": "needs_tool",
+        "same_gate": true,
+        "delta": 0.02400000000000002
+      }
+    ]
+  },
+  "native_fp8": {
+    "torch": "2.13.0+rocm10.0.0",
+    "hip": "7.15.26333",
+    "gpu": "AMD Radeon RX 9070 XT",
+    "cases": [
+      {
+        "shape": [
+          64,
+          2048,
+          6144
+        ],
+        "error": "RuntimeError: scaled_gemm with rowwise scaling is only supported for CUDA 12.9 and above"
+      },
+      {
+        "shape": [
+          1024,
+          2048,
+          6144
+        ],
+        "error": "RuntimeError: scaled_gemm with rowwise scaling is only supported for CUDA 12.9 and above"
+      },
+      {
+        "shape": [
+          4096,
+          2048,
+          2048
+        ],
+        "error": "RuntimeError: scaled_gemm with rowwise scaling is only supported for CUDA 12.9 and above"
+      }
+    ]
+  },
+  "validation": [
+    "Actual gateway read/write/no-tool dry decisions",
+    "HTTP 413/422 without waking the GPU",
+    "One of three concurrent requests accepted; others returned HTTP 503",
+    "Sign-in task launched; process recycled; replacement was ready with WDDM 0 MiB"
+  ],
+  "limitations": [
+    "One machine; active WDDM values are samples, not continuous peak measurements.",
+    "Adapter totals also include unrelated applications.",
+    "Synthetic 22-case comparison is not a general accuracy-retention benchmark.",
+    "End-to-end Codex speedup and token savings were not measured."
+  ]
+}

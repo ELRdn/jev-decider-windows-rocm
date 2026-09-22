@@ -1,0 +1,4 @@
+-r requirements-service.txt
+httpx>=0.27,<1
+# Tests additionally use the torch already installed in your environment.
+# CI installs the CPU build separately; do not replace a working ROCm build.
