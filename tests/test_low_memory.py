@@ -107,7 +107,7 @@ class LowMemoryTests(unittest.IsolatedAsyncioTestCase):
         def fail(_):
             release.wait(3)
             raise RuntimeError('simulated load failure')
-        with patch.object(server, 'load_model', side_effect=fail):
+        with self.assertLogs(server.logger, level='ERROR'), patch.object(server, 'load_model', side_effect=fail):
             async with server.lifespan(server.app):
                 async with await self.client() as client:
                     self.assertFalse((await client.get('/health')).json()['ready'])
